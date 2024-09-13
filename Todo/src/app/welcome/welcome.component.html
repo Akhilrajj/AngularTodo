@@ -1,0 +1,19 @@
+<div >
+    <app-menu ></app-menu>
+</div>
+Welcome {{userNameq}}
+<br>
+click <a routerLink="/todo"> here </a> to todos
+
+<br/>
+click here to call spring boot api
+<button (click)="callApi()">call api</button>
+<div *ngIf="msgfromApi">
+    message from spring boot api : {{msgfromApi}}
+</div>
+
+<button (click)="callApiWithName()">call api</button>
+<div *ngIf="msgfromApi">
+    message from spring boot api : {{msgfromApi}}
+</div>
+

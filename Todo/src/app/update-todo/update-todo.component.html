@@ -1,0 +1,13 @@
+<fieldset>
+    <label>Description </label>
+    <input type="text" [(ngModel)] = "todos.userName">
+</fieldset>
+<fieldset>
+    <label>Date</label>
+    <input type="date" 
+    [ngModel] = "todos.endDate | date:'yyyy-MM-dd'"
+    (ngModelChange) = "todos.endDate = $event"
+    >
+</fieldset>
+<button (click)="Save()">Save</button>
+
